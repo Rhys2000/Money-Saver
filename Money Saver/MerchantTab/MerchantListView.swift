@@ -19,8 +19,10 @@ struct MerchantListView: View {
             HeaderBar(title: "Merchant List", view: NewMerchantView(isDisplayed: $isNewMerchant), addNewItem: $isNewMerchant)
             
             //List of Merchants
-            List(merchants, id: \.name) { merchant in
-                Text(merchant.name + " -> " + merchant.tag)
+            List {
+                ForEach(merchants, id: \.name) { merchant in
+                    Text(merchant.name + " -> " + merchant.tag)
+                }
             }
             .onAppear {
                 merchants = PersistenceManager.shared.loadMerchants()
