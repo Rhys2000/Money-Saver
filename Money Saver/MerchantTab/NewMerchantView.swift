@@ -10,7 +10,10 @@ import SwiftUI
 struct NewMerchantView: View {
     
     @State private var textInput = ""
+    @State private var tagSelected = ""
     @Binding var isDisplayed: Bool
+    
+    let tags = ["Groceries", "Restaurant", "Homegoods", "Bills", "Rent"]
     
     var body: some View {
         VStack {
