@@ -37,7 +37,7 @@ struct ContentView: View {
             })
             .padding([.horizontal, .top])
             .sheet(isPresented: $isNewTransactionPagePresented) {
-                NewTransactionView()
+                NewTransactionView(isDisplayed: $isNewTransactionPagePresented)
             }
             
         }
@@ -47,8 +47,22 @@ struct ContentView: View {
 }
 
 struct NewTransactionView: View {
+    
+    @Binding var isDisplayed: Bool
+    
     var body: some View {
-        Text("Hello")
+        Spacer()
+        Button("Add Transaction") {
+            isDisplayed.toggle()
+        }
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity, minHeight: 50)
+        .background(.purple)
+        .cornerRadius(8)
+        .bold()
+        .font(.title3)
+        .padding()
+        
     }
 }
 
