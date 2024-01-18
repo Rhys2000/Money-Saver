@@ -14,7 +14,7 @@ struct MerchantListView: View {
     var body: some View {
         VStack {
             //Header Bar
-            HeaderBar(title: "Merchant List", view: NewMerchantView(), addNewItem: $isNewMerchant)
+            HeaderBar(title: "Merchant List", view: NewMerchantView(isDisplayed: $isNewMerchant), addNewItem: $isNewMerchant)
             Spacer()
         }
     }
