@@ -11,6 +11,8 @@
 		902BF71E2B598054008AE231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71D2B598054008AE231 /* ContentView.swift */; };
 		902BF7222B598055008AE231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902BF7212B598055008AE231 /* Assets.xcassets */; };
 		902BF7252B598055008AE231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902BF7242B598055008AE231 /* Preview Assets.xcassets */; };
+		902BF7482B599A93008AE231 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF7472B599A93008AE231 /* TransactionListView.swift */; };
+		902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF7492B599AEB008AE231 /* MerchantListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		902BF71D2B598054008AE231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		902BF7212B598055008AE231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902BF7242B598055008AE231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		902BF7472B599A93008AE231 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		902BF7492B599AEB008AE231 /* MerchantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				902BF71B2B598054008AE231 /* Money_SaverApp.swift */,
 				902BF71D2B598054008AE231 /* ContentView.swift */,
+				902BF7472B599A93008AE231 /* TransactionListView.swift */,
+				902BF7492B599AEB008AE231 /* MerchantListView.swift */,
 				902BF7212B598055008AE231 /* Assets.xcassets */,
 				902BF7232B598055008AE231 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				902BF71E2B598054008AE231 /* ContentView.swift in Sources */,
 				902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */,
+				902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */,
+				902BF7482B599A93008AE231 /* TransactionListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,16 +5,12 @@
 //  Created by Rhys Julian-Jones on 1/18/24.
 //
 
-import UIKit
+import SwiftUI
 
-class MerchantListView: UIView {
+struct MerchantListView: View {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var body: some View {
+        Text("Hello")
     }
-    */
 
 }
