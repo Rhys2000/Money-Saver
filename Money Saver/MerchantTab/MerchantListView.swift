@@ -30,5 +30,9 @@ struct MerchantListView: View {
             Spacer()
         }
     }
+}
 
+struct Merchant: Identifiable, Codable {
+    var id = UUID()
+    var name: String
 }
