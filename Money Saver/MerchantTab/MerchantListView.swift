@@ -10,6 +10,7 @@ import SwiftUI
 struct MerchantListView: View {
     
     @State private var isNewMerchant = false
+    @State private var merchants: [Merchant] = []
 
     var body: some View {
         VStack {
