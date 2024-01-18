@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9012CD012B599E9D00620307 /* HeaderBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012CD002B599E9D00620307 /* HeaderBar.swift */; };
+		9012CD042B59A2EA00620307 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012CD032B59A2EA00620307 /* BackButton.swift */; };
+		9012CD072B59A41200620307 /* NewTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012CD062B59A41200620307 /* NewTransactionView.swift */; };
+		9012CD092B59A45A00620307 /* NewMerchantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9012CD082B59A45A00620307 /* NewMerchantView.swift */; };
 		902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71B2B598054008AE231 /* Money_SaverApp.swift */; };
 		902BF71E2B598054008AE231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71D2B598054008AE231 /* ContentView.swift */; };
 		902BF7222B598055008AE231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902BF7212B598055008AE231 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9012CD002B599E9D00620307 /* HeaderBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderBar.swift; sourceTree = "<group>"; };
+		9012CD032B59A2EA00620307 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		9012CD062B59A41200620307 /* NewTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransactionView.swift; sourceTree = "<group>"; };
+		9012CD082B59A45A00620307 /* NewMerchantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMerchantView.swift; sourceTree = "<group>"; };
 		902BF7182B598054008AE231 /* Money Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		902BF71B2B598054008AE231 /* Money_SaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_SaverApp.swift; sourceTree = "<group>"; };
 		902BF71D2B598054008AE231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +44,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9012CCFF2B599E6F00620307 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9012CD002B599E9D00620307 /* HeaderBar.swift */,
+				9012CD032B59A2EA00620307 /* BackButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9012CD022B599FC900620307 /* TransactionTab */ = {
+			isa = PBXGroup;
+			children = (
+				902BF7472B599A93008AE231 /* TransactionListView.swift */,
+				9012CD062B59A41200620307 /* NewTransactionView.swift */,
+			);
+			path = TransactionTab;
+			sourceTree = "<group>";
+		};
+		9012CD052B59A34000620307 /* MerchantTab */ = {
+			isa = PBXGroup;
+			children = (
+				902BF7492B599AEB008AE231 /* MerchantListView.swift */,
+				9012CD082B59A45A00620307 /* NewMerchantView.swift */,
+			);
+			path = MerchantTab;
+			sourceTree = "<group>";
+		};
 		902BF70F2B598054008AE231 = {
 			isa = PBXGroup;
 			children = (
@@ -57,8 +92,9 @@
 			children = (
 				902BF71B2B598054008AE231 /* Money_SaverApp.swift */,
 				902BF71D2B598054008AE231 /* ContentView.swift */,
-				902BF7472B599A93008AE231 /* TransactionListView.swift */,
-				902BF7492B599AEB008AE231 /* MerchantListView.swift */,
+				9012CD052B59A34000620307 /* MerchantTab */,
+				9012CD022B599FC900620307 /* TransactionTab */,
+				9012CCFF2B599E6F00620307 /* Components */,
 				902BF7212B598055008AE231 /* Assets.xcassets */,
 				902BF7232B598055008AE231 /* Preview Content */,
 			);
@@ -145,8 +181,12 @@
 			files = (
 				902BF71E2B598054008AE231 /* ContentView.swift in Sources */,
 				902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */,
+				9012CD042B59A2EA00620307 /* BackButton.swift in Sources */,
+				9012CD072B59A41200620307 /* NewTransactionView.swift in Sources */,
+				9012CD012B599E9D00620307 /* HeaderBar.swift in Sources */,
 				902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */,
 				902BF7482B599A93008AE231 /* TransactionListView.swift in Sources */,
+				9012CD092B59A45A00620307 /* NewMerchantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
