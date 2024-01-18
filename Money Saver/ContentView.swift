@@ -51,18 +51,42 @@ struct NewTransactionView: View {
     @Binding var isDisplayed: Bool
     
     var body: some View {
-        Spacer()
-        Button("Add Transaction") {
-            isDisplayed.toggle()
+        VStack {
+            Text("Create a New Transaction")
+                .font(.title3)
+                .bold()
+                .padding(.top)
+            
+            Spacer()
+            
+            //Add Transaction Button
+            Button("Add Transaction") {
+                isDisplayed.toggle()
+            }
+            .foregroundColor(.white)
+            .frame(maxWidth: .infinity, minHeight: 50)
+            .background(.purple)
+            .cornerRadius(8)
+            .bold()
+            .font(.title3)
+            .padding()
         }
-        .foregroundColor(.white)
-        .frame(maxWidth: .infinity, minHeight: 50)
-        .background(.purple)
-        .cornerRadius(8)
-        .bold()
-        .font(.title3)
-        .padding()
-        
+        .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
+    }
+}
+
+struct BackButton: View {
+    @Binding var closeSheet: Bool
+    
+    var body: some View {
+        Button {
+            closeSheet.toggle()
+        } label: {
+            Image(systemName: "x.circle")
+                .padding(.top, 15)
+                .padding(.trailing, 20)
+                .scaleEffect(1.5)
+        }
     }
 }
 
