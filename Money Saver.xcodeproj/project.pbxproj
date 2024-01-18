@@ -97,9 +97,9 @@
 				9012CD052B59A34000620307 /* MerchantTab */,
 				9012CD022B599FC900620307 /* TransactionTab */,
 				9012CCFF2B599E6F00620307 /* Components */,
+				9012CD0A2B59A9EF00620307 /* PersistenceManager.swift */,
 				902BF7212B598055008AE231 /* Assets.xcassets */,
 				902BF7232B598055008AE231 /* Preview Content */,
-				9012CD0A2B59A9EF00620307 /* PersistenceManager.swift */,
 			);
 			path = "Money Saver";
 			sourceTree = "<group>";
