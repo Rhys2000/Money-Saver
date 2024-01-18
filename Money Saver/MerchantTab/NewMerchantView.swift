@@ -34,7 +34,7 @@ struct NewMerchantView: View {
             
             //Add Transaction Button
             Button("Add Merchant") {
-                //isDisplayed.toggle()
+                addNewMerchant()
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity, minHeight: 50)
@@ -45,6 +45,10 @@ struct NewMerchantView: View {
             .padding()
         }
         .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
+    }
+    
+    private func addNewMerchant() {
+        print("Merchant Added")
     }
 }
 
