@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewMerchantView: View {
     
+    @State private var textInput = ""
     @Binding var isDisplayed: Bool
     
     var body: some View {
@@ -24,7 +25,10 @@ struct NewMerchantView: View {
                 .fill(Color.black)
                 .frame(height: 2)
                 .opacity(0.4)
-                
+            
+            TextField("Add a Merchant...", text: $textInput)
+                .padding()
+                .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Spacer()
             
