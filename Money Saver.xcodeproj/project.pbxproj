@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71B2B598054008AE231 /* Money_SaverApp.swift */; };
 		902BF71E2B598054008AE231 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71D2B598054008AE231 /* ContentView.swift */; };
-		902BF7202B598054008AE231 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF71F2B598054008AE231 /* Item.swift */; };
 		902BF7222B598055008AE231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902BF7212B598055008AE231 /* Assets.xcassets */; };
 		902BF7252B598055008AE231 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 902BF7242B598055008AE231 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -18,7 +17,6 @@
 		902BF7182B598054008AE231 /* Money Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Money Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		902BF71B2B598054008AE231 /* Money_SaverApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money_SaverApp.swift; sourceTree = "<group>"; };
 		902BF71D2B598054008AE231 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		902BF71F2B598054008AE231 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		902BF7212B598055008AE231 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		902BF7242B598055008AE231 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -55,7 +53,6 @@
 			children = (
 				902BF71B2B598054008AE231 /* Money_SaverApp.swift */,
 				902BF71D2B598054008AE231 /* ContentView.swift */,
-				902BF71F2B598054008AE231 /* Item.swift */,
 				902BF7212B598055008AE231 /* Assets.xcassets */,
 				902BF7232B598055008AE231 /* Preview Content */,
 			);
@@ -141,7 +138,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				902BF71E2B598054008AE231 /* ContentView.swift in Sources */,
-				902BF7202B598054008AE231 /* Item.swift in Sources */,
 				902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
