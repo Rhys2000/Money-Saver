@@ -32,7 +32,7 @@ struct NewMerchantView: View {
             
             Spacer()
             
-            //Add Transaction Button
+            //Add Merchant Button
             Button("Add Merchant") {
                 addNewMerchant()
             }
