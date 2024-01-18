@@ -50,6 +50,10 @@ struct NewMerchantView: View {
     }
     
     private func addNewMerchant() {
+        guard !textInput.isEmpty else { return }
+        let newMerchant = Merchant(name: textInput)
+        PersistenceManager.shared.saveMerchant(merchant: newMerchant)
+        textInput = ""
         print("Merchant Added")
     }
 }
