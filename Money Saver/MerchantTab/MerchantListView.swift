@@ -20,7 +20,7 @@ struct MerchantListView: View {
             
             //List of Merchants
             List(merchants, id: \.name) { merchant in
-                Text(merchant.name)
+                Text(merchant.name + " -> " + merchant.tag)
             }
             .onAppear {
                 merchants = PersistenceManager.shared.loadMerchants()
@@ -35,4 +35,5 @@ struct MerchantListView: View {
 struct Merchant: Identifiable, Codable {
     var id = UUID()
     var name: String
+    var tag: String
 }
