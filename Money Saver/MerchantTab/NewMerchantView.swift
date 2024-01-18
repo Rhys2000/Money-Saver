@@ -62,7 +62,8 @@ struct NewMerchantView: View {
     
     private func addNewMerchant() {
         guard !textInput.isEmpty else { return }
-        let newMerchant = Merchant(name: textInput)
+        guard !tagSelected.isEmpty else { return }
+        let newMerchant = Merchant(name: textInput, tag: tagSelected)
         PersistenceManager.shared.saveMerchant(merchant: newMerchant)
         textInput = ""
         print("Merchant Added")
