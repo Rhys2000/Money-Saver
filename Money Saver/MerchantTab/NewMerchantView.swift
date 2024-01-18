@@ -21,11 +21,13 @@ struct NewMerchantView: View {
                 .bold()
                 .padding(.top)
             
+            //Divider
             Rectangle()
                 .fill(Color.black)
                 .frame(height: 2)
                 .opacity(0.4)
             
+            //Merchant Name Text Field
             TextField("Add a Merchant...", text: $textInput)
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
