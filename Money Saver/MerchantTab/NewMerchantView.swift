@@ -35,6 +35,14 @@ struct NewMerchantView: View {
                 .padding()
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
+            Picker("Choose a Tag:", selection: $tagSelected) {
+                ForEach(tags, id: \.self) { tag in
+                    Text(tag)
+                }
+            }
+            .pickerStyle(MenuPickerStyle())
+            .padding()
+            
             Spacer()
             
             //Add Merchant Button
