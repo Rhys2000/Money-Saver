@@ -10,7 +10,9 @@ import SwiftUI
 struct NewMerchantView: View {
     
     @State private var textInput = ""
+    @State private var isTextBad = false
     @State private var tagSelected = ""
+    @State private var isTagBad = false
     @Binding var isDisplayed: Bool
     
     let tags = ["Groceries", "Restaurant", "Homegoods", "Bills", "Rent"]
@@ -48,6 +50,12 @@ struct NewMerchantView: View {
             //Add Merchant Button
             Button("Add Merchant") {
                 addNewMerchant()
+                if(textInput.isEmpty) {
+                    isTextBad.toggle()
+                }
+                if(tagSelected.isEmpty) {
+                    isTagBad.toggle()
+                }
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity, minHeight: 50)
@@ -58,6 +66,12 @@ struct NewMerchantView: View {
             .padding()
         }
         .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
+        .alert(isPresented: $isTextBad, content: {
+            Alert(title: Text("Error"), message: Text("You did not enter a name for this merchant"), dismissButton: .default(Text("I Understand")))
+        })
+        .alert(isPresented: $isTagBad, content: {
+            Alert(title: Text("Error"), message: Text("You did not select a tag for this merchant"), dismissButton: .default(Text("I Understand")))
+        })
     }
     
     private func addNewMerchant() {
