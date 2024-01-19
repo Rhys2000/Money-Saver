@@ -47,13 +47,13 @@ struct NewMerchantView: View {
             
             //Add Merchant Button
             Button("Add Merchant") {
-                addNewMerchant()
                 if(textInput.isEmpty) {
                     isTextBad.toggle()
                 }
-                if(tagSelected.isEmpty) {
+                if(tagSelected == .none) {
                     isTagBad.toggle()
                 }
+                addNewMerchant()
             }
             .foregroundColor(.white)
             .frame(maxWidth: .infinity, minHeight: 50)
