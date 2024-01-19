@@ -21,7 +21,8 @@ struct MerchantListView: View {
                 List {
                     //Turns each Merchant in the saved data into a row in the List
                     ForEach(merchants, id: \.name) { merchant in
-                        Text(merchant.name + " -> " + merchant.tag)
+                        MerchantListCell(currentMerchant: merchant)
+                            .listRowInsets(EdgeInsets())
                     }
                     .onDelete(perform: deleteMerchant)
                 }
