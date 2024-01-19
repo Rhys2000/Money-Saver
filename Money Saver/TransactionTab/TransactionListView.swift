@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TransactionListView: View {
 
-    @State private var isNewTransaction = false
+    @State private var addingNewTransaction = false
     
     var body: some View {
         VStack {
