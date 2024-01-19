@@ -22,7 +22,8 @@ struct MerchantListView: View {
                             .listRowInsets(EdgeInsets())
                             .listRowBackground(Color.clear)
                             .padding(.vertical)
-                            .listRowSeparator(.hidden)
+                            //.listRowSeparator(.hidden)
+                            .background(Color.yellow)
                     }
                     .onDelete(perform: deleteMerchant)
                 }
@@ -72,4 +73,5 @@ enum Tag: String, Codable, CaseIterable {
         case .homegoods:
             return Color.red
         }
+    }
 }
