@@ -13,12 +13,17 @@ struct MerchantListCell: View {
     
     var body: some View {
         HStack {
+            
+            //Name text object
             Text(currentMerchant.name)
                 .padding(.leading, 10)
                 .foregroundColor(.white)
                 .bold()
+            
             Spacer()
-            Text(currentMerchant.tag)
+            
+            //Tag text object
+            Text(currentMerchant.tag.rawValue)
                 .padding(.horizontal, 8)
                 .padding(.vertical, 4)
                 .foregroundColor(.white)
@@ -28,6 +33,8 @@ struct MerchantListCell: View {
                 )
                 .bold()
                 .padding(.trailing, 10)
+            
+            //Image(systemName: "")
         }
         .frame(maxWidth: .infinity)
         .background(
@@ -39,5 +46,5 @@ struct MerchantListCell: View {
 }
 
 #Preview {
-    MerchantListCell(currentMerchant: Merchant(name: "Rhys", tag: "Homegoods"))
+    MerchantListCell(currentMerchant: Merchant(name: "Rhys", tag: .homegoods))
 }
