@@ -12,10 +12,13 @@ struct TransactionListView: View {
     @State private var addingNewTransaction = false
     
     var body: some View {
-        VStack {
-            //Header Bar
-            HeaderBar(title: "Transaction List", view: NewTransactionView(isDisplayed: $isNewTransaction), addNewItem: $isNewTransaction)
-            Spacer()
+        NavigationView {
+            VStack {
+                Text("Hello, world!")
+            }
+            .navigationBarTitle("Transaction List")
+            .navigationBarItems(leading: EditButton())
+            .navigationBarItems(trailing: AddButton(openSheet: $addingNewTransaction))
         }
     }
 }
