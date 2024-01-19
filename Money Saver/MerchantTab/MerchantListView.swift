@@ -1,9 +1,6 @@
-//
 //  MerchantListView.swift
 //  Money Saver
-//
 //  Created by Rhys Julian-Jones on 1/18/24.
-//
 
 import SwiftUI
 
@@ -23,6 +20,9 @@ struct MerchantListView: View {
                     ForEach(merchants, id: \.name) { merchant in
                         MerchantListCell(currentMerchant: merchant)
                             .listRowInsets(EdgeInsets())
+                            .listRowBackground(Color.clear)
+                            .padding(.vertical)
+                            .listRowSeparator(.hidden)
                     }
                     .onDelete(perform: deleteMerchant)
                 }
