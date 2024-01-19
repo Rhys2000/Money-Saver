@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct AddButton: View {
+    
+    @Binding var openSheet: Bool
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: {
+            openSheet.toggle()
+        }, label: {
+            Image(systemName: "plus")
+        })
     }
 }
 
 #Preview {
-    AddButton()
+    AddButton(openSheet: .constant(false))
 }
