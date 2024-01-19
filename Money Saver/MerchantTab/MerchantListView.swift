@@ -40,6 +40,11 @@ struct MerchantListView: View {
             .navigationBarItems(trailing: AddButton(openSheet: $isNewMerchant))
         }
     }
+    
+    func deleteMerchant(at offsets: IndexSet) {
+        merchants.remove(atOffsets: offsets)
+        PersistenceManager.shared.saveMerchants(merchants: merchants)
+    }
 }
 
 struct Merchant: Identifiable, Codable {
