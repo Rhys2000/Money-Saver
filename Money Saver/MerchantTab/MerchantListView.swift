@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MerchantListView: View {
     
-    @State private var isNewMerchant = false
+    @State private var addingNewMerchant = false
     @State private var merchants: [Merchant] = []
     @State private var isEditing = false
     
