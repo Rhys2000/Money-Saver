@@ -11,7 +11,8 @@ struct MerchantListView: View {
     
     @State private var isNewMerchant = false
     @State private var merchants: [Merchant] = []
-
+    @State private var isEditing = false
+    
     var body: some View {
         NavigationView {
             VStack {
