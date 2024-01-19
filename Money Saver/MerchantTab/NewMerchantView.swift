@@ -11,11 +11,9 @@ struct NewMerchantView: View {
     
     @State private var textInput = ""
     @State private var isTextBad = false
-    @State private var tagSelected = ""
+    @State private var tagSelected: Tag = .none
     @State private var isTagBad = false
     @Binding var isDisplayed: Bool
-    
-    let tags = ["Groceries", "Restaurant", "Homegoods", "Bills", "Rent"]
     
     var body: some View {
         VStack {
