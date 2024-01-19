@@ -62,4 +62,14 @@ enum Tag: String, Codable, CaseIterable {
     var isEmpty: Bool {
         self == .none ? true : false
     }
+    
+    var color: Color {
+        switch self {
+        case .none:
+            return Color.gray
+        case .groceries:
+            return Color.green
+        case .homegoods:
+            return Color.red
+        }
 }
