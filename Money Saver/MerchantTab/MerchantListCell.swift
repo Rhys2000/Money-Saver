@@ -17,5 +17,5 @@ struct MerchantListCell: View {
 }
 
 #Preview {
-    MerchantListCell()
+    MerchantListCell(currentMerchant: Merchant(name: "Rhys", tag: "Homegoods"))
 }
