@@ -13,23 +13,30 @@ struct MerchantListView: View {
     @State private var merchants: [Merchant] = []
 
     var body: some View {
-        VStack {
-            
-            //Header Bar
-            HeaderBar(title: "Merchant List", view: NewMerchantView(isDisplayed: $isNewMerchant), addNewItem: $isNewMerchant)
-            
-            //List of Merchants
-            List {
-                ForEach(merchants, id: \.name) { merchant in
-                    Text(merchant.name + " -> " + merchant.tag)
+        NavigationView {
+            VStack {
+                
+                // List of Merchants
+                List {
+                    //Turns each Merchant in the saved data into a row in the List
+                    ForEach(merchants, id: \.name) { merchant in
+                        Text(merchant.name + " -> " + merchant.tag)
+                    }
+                    .onDelete(perform: deleteMerchant)
                 }
+                .onAppear {
+                    merchants = PersistenceManager.shared.loadMerchants()
+                }
+                .id(isNewMerchant)
+                .sheet(isPresented: $isNewMerchant) {
+                    NewMerchantView(isDisplayed: $isNewMerchant)
+                }
+                
+                Spacer()
             }
-            .onAppear {
-                merchants = PersistenceManager.shared.loadMerchants()
-            }
-            .id(isNewMerchant)
-            
-            Spacer()
+            .navigationBarTitle("Merchant List")
+            .navigationBarItems(leading: EditButton())
+            .navigationBarItems(trailing: AddButton(openSheet: $isNewMerchant))
         }
     }
 }
