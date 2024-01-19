@@ -36,8 +36,8 @@ struct NewMerchantView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             
             Picker("Choose a Tag:", selection: $tagSelected) {
-                ForEach(tags, id: \.self) { tag in
-                    Text(tag)
+                ForEach(Tag.allCases, id: \.self) { tag in
+                    Text(tag.rawValue)
                 }
             }
             .pickerStyle(MenuPickerStyle())
