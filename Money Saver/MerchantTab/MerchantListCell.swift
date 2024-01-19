@@ -19,14 +19,20 @@ struct MerchantListCell: View {
                 .bold()
             Spacer()
             Text(currentMerchant.tag)
-                .padding(.trailing, 10)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 4)
                 .foregroundColor(.white)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.red)
+                )
                 .bold()
+                .padding(.trailing, 10)
         }
         .frame(maxWidth: .infinity)
         .background(
             RoundedRectangle(cornerRadius: 10)
-                .fill(Color.blue) // Change the color as per your design
+                .fill(Color.blue)
                 .frame(height: 50)
         )
     }
