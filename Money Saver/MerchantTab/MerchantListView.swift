@@ -29,16 +29,16 @@ struct MerchantListView: View {
                 .onAppear {
                     merchants = PersistenceManager.shared.loadMerchants()
                 }
-                .id(isNewMerchant)
-                .sheet(isPresented: $isNewMerchant) {
-                    NewMerchantView(isDisplayed: $isNewMerchant)
+                .id(addingNewMerchant)
+                .sheet(isPresented: $addingNewMerchant) {
+                    NewMerchantView(isDisplayed: $addingNewMerchant)
                 }
                 
                 Spacer()
             }
             .navigationBarTitle("Merchant List")
             .navigationBarItems(leading: EditButton())
-            .navigationBarItems(trailing: AddButton(openSheet: $isNewMerchant))
+            .navigationBarItems(trailing: AddButton(openSheet: $addingNewMerchant))
         }
     }
     
