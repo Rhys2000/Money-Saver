@@ -51,5 +51,15 @@ struct MerchantListView: View {
 struct Merchant: Identifiable, Codable {
     var id = UUID()
     var name: String
-    var tag: String
+    var tag: Tag
+}
+
+enum Tag: String, Codable, CaseIterable {
+    case none = "None"
+    case groceries = "Groceries"
+    case homegoods = "Homegoods"
+    
+    var isEmpty: Bool {
+        self == .none ? true : false
+    }
 }
