@@ -18,6 +18,7 @@
 		902BF7482B599A93008AE231 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF7472B599A93008AE231 /* TransactionListView.swift */; };
 		902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF7492B599AEB008AE231 /* MerchantListView.swift */; };
 		90452AF02B5AD2DE00F0F82B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90452AEF2B5AD2DE00F0F82B /* AddButton.swift */; };
+		90452AF22B5ADE5300F0F82B /* MerchantListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		902BF7472B599A93008AE231 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
 		902BF7492B599AEB008AE231 /* MerchantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListView.swift; sourceTree = "<group>"; };
 		90452AEF2B5AD2DE00F0F82B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
+		90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				902BF7492B599AEB008AE231 /* MerchantListView.swift */,
 				9012CD082B59A45A00620307 /* NewMerchantView.swift */,
+				90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */,
 			);
 			path = MerchantTab;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				902BF71E2B598054008AE231 /* ContentView.swift in Sources */,
 				902BF71C2B598054008AE231 /* Money_SaverApp.swift in Sources */,
 				9012CD042B59A2EA00620307 /* BackButton.swift in Sources */,
+				90452AF22B5ADE5300F0F82B /* MerchantListCell.swift in Sources */,
 				90452AF02B5AD2DE00F0F82B /* AddButton.swift in Sources */,
 				9012CD072B59A41200620307 /* NewTransactionView.swift in Sources */,
 				902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */,
