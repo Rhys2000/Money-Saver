@@ -58,7 +58,9 @@ struct ExpandingMerchantCell: View {
                 //Merchant Tag Constructor
                 Text(currentMerchant.tag.rawValue)
                     .font(.headline)
-                    .background(currentMerchant.tag.color)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(currentMerchant.tag.color))
                 
                 //Chavron Image Constructor
                 Image(systemName: currentMerchant.isExpanded ? "chevron.up" : "chevron.down")
