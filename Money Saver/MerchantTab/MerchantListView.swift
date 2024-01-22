@@ -76,6 +76,10 @@ struct ExpandingMerchantCell: View {
                     .padding(.top, 8)
             }
         }
+        .padding(8)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 2)
     }
 }
 
