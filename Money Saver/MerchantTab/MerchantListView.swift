@@ -7,7 +7,7 @@ import SwiftUI
 struct MerchantListView: View {
     
     //@State private var merchants: [Merchant] = PersistenceManager.shared.loadMerchants()
-    @State private var merchants = [Merchant(name: "Rhys", tag: .groceries), Merchant(name: "Trader Joe's", tag: .homegoods)]
+    @State private var merchants = [Merchant(name: "Trader Joe's", tag: .groceries), Merchant(name: "Target", tag: .homegoods)]
     
     var body: some View {
         NavigationView {
@@ -23,7 +23,11 @@ struct MerchantListView: View {
                         }
                     }
                     .onDelete(perform: deleteMerchant)
+                    .listRowSeparator(.hidden)
+                    .padding(.vertical, -4)
                 }
+                .listStyle(PlainListStyle())
+                .padding(.horizontal, -8)
             }
             .navigationBarTitle("Merchants")
             .navigationBarItems(leading: EditButton())
