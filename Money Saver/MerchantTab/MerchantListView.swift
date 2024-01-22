@@ -64,7 +64,7 @@ struct ExpandingMerchantCell: View {
                 
                 //Chavron Image Constructor
                 Image(systemName: currentMerchant.isExpanded ? "chevron.up" : "chevron.down")
-                    .background(Color.blue)
+                    .bold()
             }
             if currentMerchant.isExpanded {
                 Text("Number of Transactions:")
