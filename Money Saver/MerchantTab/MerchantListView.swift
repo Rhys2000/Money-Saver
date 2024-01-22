@@ -19,7 +19,7 @@ struct MerchantListView: View {
                                 self.merchants[index].isExpanded.toggle()
                             }
                         }) {
-                            Text(self.merchants[index].name)
+                            ExpandingMerchantCell(currentMerchant: merchants[index])
                         }
                     }
                     .onDelete(perform: deleteMerchant)
