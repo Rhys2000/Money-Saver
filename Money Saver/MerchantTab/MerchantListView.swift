@@ -25,6 +25,7 @@ struct MerchantListView: View {
                     .onDelete(perform: deleteMerchant)
                 }
             }
+            .navigationBarTitle("Merchants")
             .navigationBarItems(leading: EditButton())
         }
     }
