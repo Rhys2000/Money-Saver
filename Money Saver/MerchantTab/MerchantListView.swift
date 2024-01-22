@@ -45,7 +45,7 @@ struct ExpandingMerchantCell: View {
     let currentMerchant: Merchant
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 0) {
             HStack {
                 
                 //Merchant Name Constructor
