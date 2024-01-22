@@ -67,6 +67,9 @@ struct ExpandingMerchantCell: View {
                     .bold()
             }
             if currentMerchant.isExpanded {
+                RoundedRectangle(cornerRadius: 1)
+                    .frame(height: 2)
+                    .padding(.top, 4)
                 Text("Number of Transactions:")
                 Text("Total Amount Spent:")
             }
