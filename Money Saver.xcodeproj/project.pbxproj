@@ -19,6 +19,7 @@
 		902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902BF7492B599AEB008AE231 /* MerchantListView.swift */; };
 		90452AF02B5AD2DE00F0F82B /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90452AEF2B5AD2DE00F0F82B /* AddButton.swift */; };
 		90452AF22B5ADE5300F0F82B /* MerchantListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */; };
+		9067DB0F2B5EECA9005AD353 /* Merchant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9067DB0E2B5EECA9005AD353 /* Merchant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		902BF7492B599AEB008AE231 /* MerchantListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListView.swift; sourceTree = "<group>"; };
 		90452AEF2B5AD2DE00F0F82B /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantListCell.swift; sourceTree = "<group>"; };
+		9067DB0E2B5EECA9005AD353 /* Merchant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Merchant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				902BF7492B599AEB008AE231 /* MerchantListView.swift */,
 				9012CD082B59A45A00620307 /* NewMerchantView.swift */,
 				90452AF12B5ADE5300F0F82B /* MerchantListCell.swift */,
+				9067DB0E2B5EECA9005AD353 /* Merchant.swift */,
 			);
 			path = MerchantTab;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				90452AF02B5AD2DE00F0F82B /* AddButton.swift in Sources */,
 				9012CD072B59A41200620307 /* NewTransactionView.swift in Sources */,
 				902BF74A2B599AEB008AE231 /* MerchantListView.swift in Sources */,
+				9067DB0F2B5EECA9005AD353 /* Merchant.swift in Sources */,
 				9012CD0B2B59A9EF00620307 /* PersistenceManager.swift in Sources */,
 				902BF7482B599A93008AE231 /* TransactionListView.swift in Sources */,
 				9012CD092B59A45A00620307 /* NewMerchantView.swift in Sources */,
