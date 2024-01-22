@@ -36,6 +36,26 @@ struct MerchantListView: View {
     }
 }
 
+struct ExpandingMerchantCell: View {
+    
+    let currentMerchant: Merchant
+    
+    var body: some View {
+        VStack(alignment: .leading) {
+            HStack {
+                Text(currentMerchant.name)
+                Spacer()
+                Text(currentMerchant.tag.rawValue)
+                Image(systemName: currentMerchant.isExpanded ? "chevron.up" : "chevron.down")
+            }
+            if currentMerchant.isExpanded {
+                Text("Number of Transactions:")
+                Text("Total Amount Spent:")
+            }
+        }
+    }
+}
+
 #Preview {
     MerchantListView()
 }
