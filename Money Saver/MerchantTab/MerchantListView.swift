@@ -27,6 +27,7 @@ struct MerchantListView: View {
             }
             .navigationBarTitle("Merchants")
             .navigationBarItems(leading: EditButton())
+            .navigationBarItems(trailing: AddButton(openSheet: .constant(false)))
         }
     }
     
