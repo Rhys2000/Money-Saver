@@ -7,7 +7,7 @@ import SwiftUI
 struct MerchantListView: View {
     
     //@State private var merchants: [Merchant] = PersistenceManager.shared.loadMerchants()
-    @State private var merchants = [Merchant(name: "Rhys", tag: .groceries), Merchant(name: "Trader", tag: .homegoods)]
+    @State private var merchants = [Merchant(name: "Rhys", tag: .groceries), Merchant(name: "Trader Joe's", tag: .homegoods)]
     
     var body: some View {
         NavigationView {
@@ -43,8 +43,12 @@ struct ExpandingMerchantCell: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
+                
+                //Merchant Name Constructor
                 Text(currentMerchant.name)
                 Spacer()
+                
+                //Merchant Tag Constructor
                 Text(currentMerchant.tag.rawValue)
                 Image(systemName: currentMerchant.isExpanded ? "chevron.up" : "chevron.down")
             }
