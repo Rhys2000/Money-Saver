@@ -6,8 +6,8 @@ import SwiftUI
 
 struct MerchantListView: View {
     
-    //@State private var merchants: [Merchant] = PersistenceManager.shared.loadMerchants()
-    @State private var merchants = [Merchant(name: "Trader Joe's", tag: .groceries), Merchant(name: "Target", tag: .homegoods)]
+    @State private var merchants: [Merchant] = PersistenceManager.shared.loadMerchants()
+    @State private var newMerchant = false
     
     var body: some View {
         NavigationView {
