@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+struct NewMerchantView: View {
+    
+    @Binding var isDisplayed: Bool
+    
+    var body: some View {
+        NavigationView {
+            VStack {
+                
+            }
+            .navigationBarTitle("Add a Merchant")
+            .navigationBarItems(trailing: Button("Exit", action: {
+                isDisplayed.toggle()
+            }))
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
+
 //struct NewMerchantView: View {
 //    
 //    @State private var textInput = ""
