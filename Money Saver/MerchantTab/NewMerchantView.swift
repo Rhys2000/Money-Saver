@@ -45,7 +45,17 @@ struct NewMerchantView: View {
                 
                 List {
                     ForEach(Tag.allCases.dropFirst(), id: \.self) { tag in
-                        Text(tag.rawValue)
+                        Button(action: {
+                            tagInput = tag
+                        }) {
+                            HStack {
+                                Text(tag.rawValue)
+                                Spacer()
+                                if tagInput == tag {
+                                    Image(systemName: "checkmark")
+                                }
+                            }
+                        }
                     }
                 }
                 .listStyle(.plain)
