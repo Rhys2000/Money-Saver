@@ -80,20 +80,8 @@ struct NewMerchantView: View {
 
 //struct NewMerchantView: View {
 //    
-//    @State private var tagSelected: Tag = .none
-//    
 //    var body: some View {
 //        VStack {
-//            
-//            Picker("Choose a Tag:", selection: $tagSelected) {
-//                ForEach(Tag.allCases, id: \.self) { tag in
-//                    Text(tag.rawValue)
-//                }
-//            }
-//            .pickerStyle(MenuPickerStyle())
-//            .padding()
-//            
-//            Spacer()
 //            
 //            //Add Merchant Button
 //            Button("Add Merchant") {
