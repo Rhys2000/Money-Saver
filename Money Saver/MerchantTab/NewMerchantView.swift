@@ -16,6 +16,11 @@ struct NewMerchantView: View {
         NavigationView {
             VStack {
                 TextField("Add a Merchant...", text: $textInput)
+                    .background(Color.orange)
+                    .textFieldStyle(.roundedBorder)
+                    .padding()
+                    .frame(height: 100)
+                Spacer()
             }
             .navigationBarTitle("Add a Merchant")
             .navigationBarItems(trailing: Button("Exit", action: {
