@@ -25,6 +25,12 @@ struct NewMerchantView: View {
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal, 16)
                 
+                Text("Select a Category")
+                    .padding(.leading, 16)
+                    .padding(.top, 16)
+                    .font(.title3)
+                    .bold()
+                
                 List {
                     ForEach(Tag.allCases, id: \.self) { tag in
                         Text(tag.rawValue)
