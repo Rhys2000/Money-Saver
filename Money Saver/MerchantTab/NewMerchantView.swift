@@ -88,6 +88,10 @@ struct NewMerchantView: View {
             .navigationBarTitleDisplayMode(.inline)
         }
     }
+    
+    private func addNewMerchant() {
+        
+    }
 }
 
 //struct NewMerchantView: View {
