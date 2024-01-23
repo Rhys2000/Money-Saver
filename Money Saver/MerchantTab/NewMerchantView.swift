@@ -16,7 +16,7 @@ struct NewMerchantView: View {
         NavigationView {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Merchant Name")
-                    .padding(.leading, 8)
+                    .padding(.leading, 16)
                     .padding(.top, 16)
                     .font(.title3)
                     .bold()
