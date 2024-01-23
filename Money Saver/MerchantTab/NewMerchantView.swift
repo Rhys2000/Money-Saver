@@ -24,8 +24,8 @@ struct NewMerchantView: View {
                 TextField("", text: $textInput)
                     .border(Color.orange)
                     .textFieldStyle(.roundedBorder)
-                    .padding()
-                    .frame(height: 100)
+                    .padding(.horizontal, 8)
+                
                 Spacer()
             }
             .navigationBarTitle("Add a Merchant")
