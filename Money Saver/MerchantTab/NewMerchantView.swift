@@ -28,7 +28,7 @@ struct NewMerchantView: View {
                 
                 Spacer()
             }
-            .navigationBarTitle("Add a Merchant")
+            .navigationBarTitle("New Merchant")
             .navigationBarItems(trailing: Button("Exit", action: {
                 isDisplayed.toggle()
             }))
