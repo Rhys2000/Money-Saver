@@ -49,7 +49,6 @@ struct NewMerchantView: View {
                     }
                 }
                 .listStyle(.plain)
-                //.frame(maxHeight: .infinity)
                 .frame(height: 200)
                 
                 Text("Add an Image")
