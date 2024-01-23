@@ -10,9 +10,7 @@ import SwiftUI
 struct NewMerchantView: View {
     
     @State private var textInput = ""
-    @State private var isTextBad = false
     @State private var tagSelected: Tag = .none
-    @State private var isTagBad = false
     @Binding var isDisplayed: Bool
     
     var body: some View {
@@ -47,12 +45,12 @@ struct NewMerchantView: View {
             
             //Add Merchant Button
             Button("Add Merchant") {
-                if(textInput.isEmpty) {
-                    isTextBad.toggle()
-                }
-                if(tagSelected == .none) {
-                    isTagBad.toggle()
-                }
+//                if(textInput.isEmpty) {
+//                    isTextBad.toggle()
+//                }
+//                if(tagSelected == .none) {
+//                    isTagBad.toggle()
+//                }
                 addNewMerchant()
             }
             .foregroundColor(.white)
@@ -64,12 +62,12 @@ struct NewMerchantView: View {
             .padding()
         }
         .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
-        .alert(isPresented: $isTextBad, content: {
-            Alert(title: Text("Error"), message: Text("You did not enter a name for this merchant"), dismissButton: .default(Text("I Understand")))
-        })
-        .alert(isPresented: $isTagBad, content: {
-            Alert(title: Text("Error"), message: Text("You did not select a tag for this merchant"), dismissButton: .default(Text("I Understand")))
-        })
+//        .alert(isPresented: $isTextBad, content: {
+//            Alert(title: Text("Error"), message: Text("You did not enter a name for this merchant"), dismissButton: .default(Text("I Understand")))
+//        })
+//        .alert(isPresented: $isTagBad, content: {
+//            Alert(title: Text("Error"), message: Text("You did not select a tag for this merchant"), dismissButton: .default(Text("I Understand")))
+//        })
     }
     
     private func addNewMerchant() {
