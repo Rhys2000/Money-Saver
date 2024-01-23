@@ -68,6 +68,18 @@ struct NewMerchantView: View {
                     .bold()
                 
                 Spacer()
+                
+                Button("Add Merchant") {
+                    addNewMerchant()
+                }
+                .foregroundColor(.white)
+                .frame(maxWidth: .infinity, minHeight: 50)
+                .background(Color.purple)
+                .cornerRadius(10)
+                .font(.title3)
+                .bold()
+                .padding(.horizontal, 16)
+                .padding(.vertical, 1)
             }
             .navigationBarTitle("New Merchant")
             .navigationBarItems(trailing: Button("Exit", action: {
