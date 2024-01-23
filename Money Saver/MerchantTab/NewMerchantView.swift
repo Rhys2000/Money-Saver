@@ -44,7 +44,7 @@ struct NewMerchantView: View {
                 }
                 
                 List {
-                    ForEach(Tag.allCases, id: \.self) { tag in
+                    ForEach(Tag.allCases.dropFirst(), id: \.self) { tag in
                         Text(tag.rawValue)
                     }
                 }
