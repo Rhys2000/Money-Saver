@@ -33,24 +33,10 @@ struct NewMerchantView: View {
 
 //struct NewMerchantView: View {
 //    
-//    @State private var textInput = ""
 //    @State private var tagSelected: Tag = .none
-//    @Binding var isDisplayed: Bool
 //    
 //    var body: some View {
 //        VStack {
-//            
-//            //Title Text
-//            Text("Add a New Merchant")
-//                .font(.title3)
-//                .bold()
-//                .padding(.top)
-//            
-//            //Divider
-//            Rectangle()
-//                .fill(Color.black)
-//                .frame(height: 2)
-//                .opacity(0.4)
 //            
 //            //Merchant Name Text Field
 //            TextField("Add a Merchant...", text: $textInput)
