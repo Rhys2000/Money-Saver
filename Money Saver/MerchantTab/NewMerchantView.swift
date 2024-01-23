@@ -14,9 +14,15 @@ struct NewMerchantView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                TextField("Add a Merchant...", text: $textInput)
-                    .background(Color.orange)
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Merchant Name")
+                    .padding(.leading, 8)
+                    .padding(.top, 16)
+                    .font(.title3)
+                    .bold()
+                
+                TextField("", text: $textInput)
+                    .border(Color.orange)
                     .textFieldStyle(.roundedBorder)
                     .padding()
                     .frame(height: 100)
