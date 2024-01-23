@@ -21,8 +21,7 @@ struct NewMerchantView: View {
                     .font(.title3)
                     .bold()
                 
-                TextField("", text: $textInput)
-                    .border(Color.orange)
+                TextField("Name", text: $textInput)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal, 8)
                 
