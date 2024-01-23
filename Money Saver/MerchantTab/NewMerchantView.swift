@@ -10,11 +10,12 @@ import SwiftUI
 struct NewMerchantView: View {
     
     @Binding var isDisplayed: Bool
+    @State private var textInput: String = ""
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                TextField("Add a Merchant...", text: $textInput)
             }
             .navigationBarTitle("Add a Merchant")
             .navigationBarItems(trailing: Button("Exit", action: {
