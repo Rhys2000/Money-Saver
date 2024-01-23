@@ -43,11 +43,6 @@ struct NewMerchantView: View {
 //    var body: some View {
 //        VStack {
 //            
-//            //Merchant Name Text Field
-//            TextField("Add a Merchant...", text: $textInput)
-//                .padding()
-//                .textFieldStyle(RoundedBorderTextFieldStyle())
-//            
 //            Picker("Choose a Tag:", selection: $tagSelected) {
 //                ForEach(Tag.allCases, id: \.self) { tag in
 //                    Text(tag.rawValue)
