@@ -59,7 +59,7 @@ struct NewMerchantView: View {
                     }
                 }
                 .listStyle(.plain)
-                .frame(height: 200)
+                .frame(height: 100)
                 
                 Text("Add an Image")
                     .padding(.leading, 16)
