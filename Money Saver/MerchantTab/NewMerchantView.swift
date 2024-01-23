@@ -23,7 +23,14 @@ struct NewMerchantView: View {
                 
                 TextField("Name", text: $textInput)
                     .textFieldStyle(.roundedBorder)
-                    .padding(.horizontal, 8)
+                    .padding(.horizontal, 16)
+                
+                List {
+                    ForEach(Tag.allCases, id: \.self) { tag in
+                        Text(tag.rawValue)
+                    }
+                }
+                .listStyle(.plain)
                 
                 Spacer()
             }
