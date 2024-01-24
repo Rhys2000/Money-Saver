@@ -35,6 +35,12 @@ enum Tag: String, Codable, CaseIterable {
             return Color.green
         case .homegoods:
             return Color.red
+        case .rent:
+            return Color.purple
+        case .bills:
+            return Color.blue
+        case .entertainment:
+            return Color.yellow
         }
     }
 }
