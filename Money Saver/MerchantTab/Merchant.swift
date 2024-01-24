@@ -19,6 +19,9 @@ enum Tag: String, Codable, CaseIterable {
     case none = "None"
     case groceries = "Groceries"
     case homegoods = "Homegoods"
+    case rent = "Rent"
+    case bills = "Bills"
+    case entertainment = "Entertainment"
     
     var isEmpty: Bool {
         self == .none ? true : false
