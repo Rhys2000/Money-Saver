@@ -110,13 +110,6 @@ struct NewMerchantView: View {
 //            Button("Add Merchant") {
 //                addNewMerchant()
 //            }
-//            .foregroundColor(.white)
-//            .frame(maxWidth: .infinity, minHeight: 50)
-//            .background(.purple)
-//            .cornerRadius(8)
-//            .bold()
-//            .font(.title3)
-//            .padding()
 //        }
 //    }
 //    
