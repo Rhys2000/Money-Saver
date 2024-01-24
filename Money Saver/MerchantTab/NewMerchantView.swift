@@ -117,12 +117,7 @@ struct NewMerchantView: View {
 //        }
 //    }
 //    
-//    private func addNewMerchant() {
-//        let newMerchant = Merchant(name: textInput, tag: tagSelected)
-//        PersistenceManager.shared.saveMerchant(merchant: newMerchant)
-//        textInput = ""
-//        print("Merchant Added")
-//    }
+//
 //}
 
 #Preview {
