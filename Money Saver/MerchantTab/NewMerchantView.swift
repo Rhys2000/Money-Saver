@@ -75,6 +75,9 @@ struct NewMerchantView: View {
                     if(textInput.isEmpty) {
                         badText.toggle()
                     }
+                    else if(tagInput.isEmpty) {
+                        badTag.toggle()
+                    }
                     addNewMerchant()
                 }
                 .foregroundColor(.white)
