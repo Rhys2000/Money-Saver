@@ -90,6 +90,9 @@ struct NewMerchantView: View {
                 isDisplayed.toggle()
             }))
             .navigationBarTitleDisplayMode(.inline)
+            .alert(isPresented: $badText, content: {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Alert(title: Text("Alert"))/*@END_MENU_TOKEN@*/
+            })
         }
     }
     
