@@ -11,9 +11,8 @@ struct NewMerchantView: View {
     
     @Binding var isDisplayed: Bool
     @State private var textInput: String = ""
-    @State private var badText = false
     @State private var tagInput: Tag = .none
-    @State private var badTag = false
+    @State private var badInput = false
     
     var body: some View {
         NavigationView {
