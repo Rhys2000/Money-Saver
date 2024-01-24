@@ -91,7 +91,7 @@ struct NewMerchantView: View {
             }))
             .navigationBarTitleDisplayMode(.inline)
             .alert(isPresented: $badText, content: {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Alert(title: Text("Alert"))/*@END_MENU_TOKEN@*/
+                Alert(title: Text("Bad Input"), message: Text("No name was enetered for this merchant"), dismissButton: .default(Text("Dismiss")))
             })
         }
     }
