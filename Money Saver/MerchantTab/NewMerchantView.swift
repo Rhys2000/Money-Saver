@@ -125,12 +125,6 @@ struct NewMerchantView: View {
 //            .padding()
 //        }
 //        .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
-////        .alert(isPresented: $isTextBad, content: {
-////            Alert(title: Text("Error"), message: Text("You did not enter a name for this merchant"), dismissButton: .default(Text("I Understand")))
-////        })
-////        .alert(isPresented: $isTagBad, content: {
-////            Alert(title: Text("Error"), message: Text("You did not select a tag for this merchant"), dismissButton: .default(Text("I Understand")))
-////        })
 //    }
 //    
 //    private func addNewMerchant() {
