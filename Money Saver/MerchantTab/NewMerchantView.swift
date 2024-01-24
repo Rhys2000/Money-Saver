@@ -97,7 +97,7 @@ struct NewMerchantView: View {
     }
     
     private func addNewMerchant() {
-        
+        print("Hello")
     }
 }
 
