@@ -113,10 +113,7 @@ struct NewMerchantView: View {
 //    var body: some View {
 //        VStack {
 //            
-//            //Add Merchant Button
-//            Button("Add Merchant") {
-//                addNewMerchant()
-//            }
+//
 //        }
 //    }
 //    
