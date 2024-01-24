@@ -75,6 +75,11 @@ struct NewMerchantView: View {
                         badInput.toggle()
                         return
                     }
+                    guard !tagInput.isEmpty else {
+                        badInput.toggle()
+                        return
+                    }
+                    addNewMerchant()
                 }
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, minHeight: 50)
