@@ -118,7 +118,6 @@ struct NewMerchantView: View {
 //            .font(.title3)
 //            .padding()
 //        }
-//        .overlay(BackButton(closeSheet: $isDisplayed), alignment: .topTrailing)
 //    }
 //    
 //    private func addNewMerchant() {
