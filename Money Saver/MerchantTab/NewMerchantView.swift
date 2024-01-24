@@ -13,6 +13,7 @@ struct NewMerchantView: View {
     @State private var textInput: String = ""
     @State private var badText = false
     @State private var tagInput: Tag = .none
+    @State private var badTag = false
     
     var body: some View {
         NavigationView {
