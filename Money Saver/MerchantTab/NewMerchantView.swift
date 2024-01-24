@@ -95,7 +95,10 @@ struct NewMerchantView: View {
             }))
             .navigationBarTitleDisplayMode(.inline)
             .alert(isPresented: $badText, content: {
-                Alert(title: Text("Bad Input"), message: Text("No name was enetered for this merchant"), dismissButton: .default(Text("Dismiss")))
+                Alert(title: Text("Bad Input"), message: Text("No name was entered for this merchant"), dismissButton: .default(Text("Dismiss")))
+            })
+            .alert(isPresented: $badTag, content: {
+                Alert(title: Text("Bad Input"), message: Text("No category was selected for this merchant"), dismissButton: .default(Text("Dismiss")))
             })
         }
     }
