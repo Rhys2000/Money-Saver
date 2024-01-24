@@ -71,6 +71,9 @@ struct NewMerchantView: View {
                 Spacer()
                 
                 Button("Add Merchant") {
+                    if(textInput.isEmpty) {
+                        badText.toggle()
+                    }
                     addNewMerchant()
                 }
                 .foregroundColor(.white)
