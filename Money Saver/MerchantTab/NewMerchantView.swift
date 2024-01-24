@@ -108,12 +108,6 @@ struct NewMerchantView: View {
 //            
 //            //Add Merchant Button
 //            Button("Add Merchant") {
-////                if(textInput.isEmpty) {
-////                    isTextBad.toggle()
-////                }
-////                if(tagSelected == .none) {
-////                    isTagBad.toggle()
-////                }
 //                addNewMerchant()
 //            }
 //            .foregroundColor(.white)
