@@ -108,18 +108,6 @@ struct NewMerchantView: View {
     }
 }
 
-//struct NewMerchantView: View {
-//    
-//    var body: some View {
-//        VStack {
-//            
-//
-//        }
-//    }
-//    
-//
-//}
-
 #Preview {
     NewMerchantView(isDisplayed: .constant(false))
 }
