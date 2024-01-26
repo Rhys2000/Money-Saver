@@ -80,6 +80,7 @@ struct NewMerchantView: View {
                         return
                     }
                     addNewMerchant()
+                    isDisplayed.toggle()
                 }
                 .foregroundColor(.white)
                 .frame(maxWidth: .infinity, minHeight: 50)
