@@ -45,6 +45,10 @@ struct MerchantListView: View {
     private func deleteMerchant(at offsets: IndexSet) {
         merchants.remove(atOffsets: offsets)
     }
+    
+    private func sayHello() {
+        print("Hello")
+    }
 }
 
 struct ExpandingMerchantCell: View {
