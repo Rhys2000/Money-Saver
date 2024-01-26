@@ -35,6 +35,9 @@ struct MerchantListView: View {
             .sheet(isPresented: $newMerchant) {
                 NewMerchantView(isDisplayed: $newMerchant)
             }
+            .onChange(of: newMerchant) {
+                merchants = PersistenceManager.shared.loadMerchants()
+            }
         }
     }
     
