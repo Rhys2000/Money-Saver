@@ -33,7 +33,7 @@ struct MerchantListView: View {
                             .tint(.mint)
                         }
                     }
-                    .onDelete(perform: deleteMerchant)
+                    //.onDelete(perform: deleteMerchant)
                     .listRowSeparator(.hidden)
                     .padding(.vertical, -4)
                 }
