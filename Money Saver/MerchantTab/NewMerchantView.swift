@@ -26,6 +26,7 @@ struct NewMerchantView: View {
                 TextField("Name", text: $textInput)
                     .textFieldStyle(.roundedBorder)
                     .padding(.horizontal, 16)
+                    .submitLabel(.continue)
                 
                 HStack(alignment: .bottom) {
                     Text("Select a Category")
