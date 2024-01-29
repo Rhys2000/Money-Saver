@@ -63,6 +63,7 @@ struct ExpandingMerchantCell: View {
                 Text(currentMerchant.name)
                     .font(.title3)
                     .bold()
+                    .foregroundColor(.black)
                 
                 Spacer()
                 
