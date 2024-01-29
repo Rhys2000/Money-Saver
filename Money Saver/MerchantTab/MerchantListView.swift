@@ -41,9 +41,8 @@ struct MerchantListView: View {
                 .padding(.horizontal, -8)
             }
             .navigationBarTitle("Merchants")
-            .navigationBarItems(leading: EditButton())
             .navigationBarItems(trailing: AddButton(openSheet: $newMerchant))
-            .navigationBarItems(trailing: Button("Hi", action: sayHello))
+            .navigationBarItems(leading: Button("Hi", action: sayHello))
             .sheet(isPresented: $newMerchant) {
                 NewMerchantView(isDisplayed: $newMerchant)
             }
