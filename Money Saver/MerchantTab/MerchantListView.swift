@@ -94,8 +94,10 @@ struct ExpandingMerchantCell: View {
                     .frame(height: 2)
                     .padding(.top, 4)
                 Text("Number of Transactions:")
+                    .foregroundColor(.black)
                     .padding(.top, 8)
                 Text("Total Amount Spent:")
+                    .foregroundColor(.black)
                     .padding(.top, 8)
             }
         }
