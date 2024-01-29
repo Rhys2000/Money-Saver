@@ -77,6 +77,7 @@ struct ExpandingMerchantCell: View {
                 //Chavron Image Constructor
                 Image(systemName: currentMerchant.isExpanded ? "chevron.up" : "chevron.down")
                     .bold()
+                    .foregroundColor(.black)
             }
             if currentMerchant.isExpanded {
                 RoundedRectangle(cornerRadius: 1)
