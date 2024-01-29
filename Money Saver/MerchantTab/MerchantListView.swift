@@ -21,6 +21,17 @@ struct MerchantListView: View {
                         }) {
                             ExpandingMerchantCell(currentMerchant: merchants[index])
                         }
+                        .swipeActions(edge: .leading, allowsFullSwipe: false) {
+                            Button(action: {
+                                print("Button Press")
+                            }) {
+                                HStack {
+                                    Text("Edit")
+                                    //Image(systemName: "pencil")
+                                }
+                            }
+                            .tint(.mint)
+                        }
                     }
                     .onDelete(perform: deleteMerchant)
                     .listRowSeparator(.hidden)
